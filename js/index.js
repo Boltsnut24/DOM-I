@@ -61,7 +61,12 @@ navBar.forEach(function(aLink){
   aLink.setAttribute('style', 'color: green');
 });
 
-//Header
+//cta
+const h1cta = document.querySelector('.cta .cta-text h1');
+h1cta.textContent = siteContent['cta']['h1'];
+
+const buttonCta = document.querySelector('.cta .cta-text button');
+buttonCta.textContent = siteContent['cta']['button'];
 
 //Top Content
 
