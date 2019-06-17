@@ -49,16 +49,6 @@ midImg.setAttribute('src', 'img/mid-page-accent.jpg');
 
 //Fill in JSON data
 //Navbar
-//Add to navbar
-const navAppend = document.createElement('a');
-navAppend.href = '#';
-navAppend.textContent = 'Appended';
-document.querySelector('nav').appendChild(navAppend);
-
-const navPrepend = document.createElement('a');
-navPrepend.href = '#';
-navPrepend.textContent = 'Prepended';
-document.querySelector('nav').prepend(navPrepend);
 
 //Base navbar
 const navBar = document.querySelectorAll('nav a'); 
@@ -109,3 +99,15 @@ contactP[2].textContent = siteContent['contact']['email'];
 const foot = document.querySelector('footer');
 foot.textContent = siteContent['footer']['copyright'];
 
+//Add to navbar
+const navAppend = document.createElement('a');
+navAppend.href = '#';
+navAppend.textContent = 'Appended';
+navAppend.style = 'color: green';
+document.querySelector('nav').appendChild(navAppend);
+
+const navPrepend = document.createElement('a');
+navPrepend.href = '#';
+navPrepend.textContent = 'Prepended';
+navPrepend.style = 'color: green';
+document.querySelector('nav').prepend(navPrepend);
