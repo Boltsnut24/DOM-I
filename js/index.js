@@ -84,3 +84,14 @@ mainP[3].textContent = siteContent['main-content']['product-content'];
 mainP[4].textContent = siteContent['main-content']['vision-content'];
 
 //Contact
+const contactH4 = document.querySelector('.contact h4');
+contactH4.textContent = siteContent['contact']['contact-h4'];
+
+const contactP = document.querySelectorAll('.contact p');
+contactP[0].textContent = siteContent['contact']['address'];
+contactP[1].textContent = siteContent['contact']['phone'];
+contactP[2].textContent = siteContent['contact']['email'];
+
+//footer
+const foot = document.querySelector('footer');
+foot.textContent = siteContent['footer']['copyright'];
